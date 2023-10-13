@@ -55,7 +55,7 @@
           <a class="nav-link" href="#examples">Examples</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#results">Results</a>
+          <a class="nav-link" href="#results">Experiment Results</a>
         </li>
       </ul>
     </div>
@@ -65,30 +65,21 @@
   <div class="hero_area">
   <!-- about section -->
 
-  <section id="about" class="about_section">
-    <div class="container  " style="margin-top: 10vh; margin: 0 auto;">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                ImageBind
-              </h2>
-            </div>
-            <p>
-              Imagebind binds together six modalities: images, video, audio, text, depth, thermal, and IMU measurements. It binds these different modalities through the inherent alignments between each of them with images.
-              For example, videos pair images and audio, thermal data pairs images and temperature, and IMU data pairs images and motion.
-          
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 ">
-            <img src="images/icon_1.png" alt="">
-        </div>
+<section id="about" class="about_section" style="text-align: center;">
+  <div class="container" style="margin-top: 5vh;">
+    <h1 style="font-size: 7vh; margin-bottom: 5vh;">ImageBind</h1>
+    <p style="margin-bottom: 20px;">
+      This is an interactive demo for the work <a href="https://imagebind.metademolab.com/">ImageBind</a>. 
+      Below is a cross-modal retrieval system built using the ImageBind model. Get started by entering queries,
+      or use the navigation bar to see examples and the results of our experiments.
 
-      </div>
-    </div>
-  </section>
+    </p>
+    <img src="images/example3.png" alt="">
+  </div>
+</section>
+
+
+
 
   <!-- end about section -->
 
@@ -103,15 +94,35 @@
 <!-- Two image examples -->
 <section id="examples" class="layout_padding" style="padding: 20px;">
   <h2 style="text-align: center;">Examples</h2>
-  <div class="example-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 20px;">
-    <div class="example" style="flex: 0 0 48%; text-align: center; margin-bottom: 20px;">
-      <img src="images/example1.png" alt="Example 1" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+  <div class="two-column-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 20px;">
+    <div class="two-column" style="flex: 0 0 48%; text-align: center; margin-bottom: 20px;">
+      <img src="images/compare_3.png" alt="Example 1" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+      <p style="text-align: center; margin-top: 20px;">
+        Here we are retrieving cat images, with audio of a cat meowing. However, the cats are shown in a variety of scenarios.
+        If we want to get pictures of sleeping cats specifically...
+      </p>
+      <img src="images/down-arrow.svg" alt="Down arrow" style="max-width: 5%; margin-top: -2%;">
+      <img src="images/compare_4.png" alt="Example 2" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+      <p style="text-align: center; margin-top: 20px;">
+        We can add an image of a bed to the query. Now the results show cats sleeping in beds!
+      </p>
     </div>
-    <div class="example" style="flex: 0 0 48%; text-align: center; margin-bottom: 20px;">
-      <img src="images/example2.png" alt="Example 2" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+    <div class="two-column" style="flex: 0 0 48%; text-align: center; margin-bottom: 20px;">
+      <img src="images/compare_1.png" alt="Example 1" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+      <p style="text-align: center; margin-top: 20px;">
+        Here we are retrieving images of umbrellas in the rain. The umbrellas are present, but the rain is not very clear. 
+        In order to show both the rain and the umbrellas in the results...
+      </p>
+      <img src="images/down-arrow.svg" alt="Down arrow" style="max-width: 5%; margin-top: -2%;">
+      <img src="images/compare_2.png" alt="Example 2" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+      <p style="text-align: center; margin-top: 20px;">
+        We can add a rain image to the query. Now the results show umbrellas and more visble rain!
+      </p>
     </div>
   </div>
 </section>
+
+
 
 
 <section id="results" class="table_section layout_padding" style="margin-bottom: -15vh;">
